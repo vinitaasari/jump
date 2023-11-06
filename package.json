@@ -3,7 +3,14 @@
   "version": "0.1.2",
   "main": "src/index.js",
   "private": false,
+  "babel": {
+    "presets": ["@babel/preset-react", "@babel/preset-env"],
+    "plugins": ["@babel/plugin-proposal-class-properties"]
+  },
   "dependencies": {
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "@babel/preset-react": "^7.22.15",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
